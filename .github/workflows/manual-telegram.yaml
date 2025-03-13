@@ -44,8 +44,23 @@ jobs:
       - name: install convertor
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
-      - name: audio convertor
-        run: ./files/scripts/convertor.sh
+      - name: mp3 convertor
+        run: ./files/scripts/mp3_convertor.sh
+
+      - name: flac convertor
+        run: ./files/scripts/flac_convertor.sh
+
+      - name: ogg convertor
+        run: ./files/scripts/ogg_convertor.sh
+
+      - name: wav convertor
+        run: ./files/scripts/wav_convertor.sh
+
+      - name: mp4 convertor
+        run: ./files/scripts/mp4_convertor.sh
+
+      - name: m4a convertor
+        run: ./files/scripts/m4a_convertor.sh
 
       - name: Make changes (example)
         run: |
